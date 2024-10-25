@@ -38,8 +38,8 @@ def monitor_changes():
             else:
                 logging.warning(f"File missing: {filepath}.")
         else:
-            logging.info(f"New file detected: {filepath}, updating baseline.")
-            create_baseline()
+            logging.info(f"New file detected: {filepath}, please, make sure it is supposed to be there and re-run the baseline_generator.py")
+
 
     logging.info("File integrity monitoring completed.")
 
