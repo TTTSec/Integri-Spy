@@ -33,7 +33,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/Integri-Spy.git
+   git clone https://github.com/TheMuslimHacker/Integri-Spy.git
    cd Integri-Spy
    ```
 
