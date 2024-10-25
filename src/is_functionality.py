@@ -43,10 +43,9 @@ def create_baseline():
             file_hash = generate_hash(filepath)
             if file_hash:
                 baseline_data[filepath] = file_hash
-                print(f"Hash for {filepath}: {file_hash}")
+                
         else:
             logging.warning(f"{filepath} does not exist and will be skipped.")
     baseline_file_path = os.path.join(os.path.dirname(__file__), "..", "baseline.json")
     with open(baseline_file_path, 'w') as baseline_file:
         json.dump(baseline_data, baseline_file, indent=4)
-    print("Baseline created and saved successfully.")
